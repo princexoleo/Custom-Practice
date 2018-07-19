@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardViewActivity"
+    android:orientation="vertical">
+
+    <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="8dp"
+            card_view:contentPadding="4dp"
+
+            >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+
+                  android:id="@+id/imageIconId"
+                  android:layout_width="130dp"
+                  android:layout_height="100dp"
+                  android:src="@drawable/ic_android_black_24dp"
+                  android:layout_gravity="center"
+
+                  />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <TextView
+                      android:id="@+id/titleTextViewId"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="This for Title" />
+                  <TextView
+                      android:id="@+id/secondaryTextViewId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="MaterialCardView supports all of the standard attributes that can be changed for a CardView.View:"/>
+
+                  <RatingBar
+                      android:id="@+id/ratingBarId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:numStars="5"
+                      android:stepSize="1" />
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+                      <ImageView
+                          android:id="@+id/addToCartImageId"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:src="@drawable/ic_add_shopping_cart_black_24dp"/>
+                      <Button
+                          android:id="@+id/addtoCardButton"
+                          android:layout_width="160dp"
+                          android:layout_height="25dp"
+                          android:text="Add to cart"
+                          android:maxLines="1"
+                          android:textAlignment="center"
+                          android:background="@color/colorPrimaryLight"
+
+                          />
+
+                  </LinearLayout>
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

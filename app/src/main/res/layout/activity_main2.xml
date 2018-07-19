@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    tools:context=".Main2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello My friends !"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/selectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your location" />
+
+        <CheckBox
+            android:id="@+id/dhakaCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka"
+
+            />
+
+        <CheckBox
+            android:id="@+id/mymenCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mymensingh"
+
+            />
+
+        <TextView
+            android:id="@+id/selectFoodTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your favourite food" />
+
+        <RadioGroup
+            android:id="@+id/radiogp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/faluRad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faluda" />
+
+            <RadioButton
+                android:id="@+id/rosRad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rosmolay" />
+
+            <RadioButton
+                android:id="@+id/manRad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mango Juice" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/countrySelectText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your favourite Country" />
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="select your favourite Country">
+
+        </Spinner>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your favourite player name"
+            android:focusable="true"
+            android:focusedByDefault="false"/>
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your rating here" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/seekBarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your rating here" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/progressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0%" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="1" />
+
+
+        <TextView
+            android:id="@+id/datetextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/12/2018/" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Date Picker" />
+
+        <TextView
+            android:id="@+id/timetextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hours:00: Minutes: 00" />
+
+        <Button
+            android:id="@+id/timePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Time Picker" />
+
+        <Button
+            android:id="@+id/timerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer Activity" />
+        <Button
+            android:id="@+id/dataActivitybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database Activity"/>
+
+        <Button
+            android:id="@+id/web_view_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web View"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nextActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next to RecyclerView" />
+
+            <Button
+                android:id="@+id/nextCardViewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next to CardView" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
